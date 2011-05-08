@@ -1,0 +1,12 @@
+PACKAGE
+
+package jsonutil
+import "github.com/wcspromoteam/jsonutil"
+
+FUNCTIONS
+
+func DecodeFromFile(filename string, object interface{}) (e os.Error)
+Decodes a JSON representation of a stuct into that struct from the file specified.
+
+func EncodeToFile(filename string, object interface{}) (e os.Error)
+Encodes the specified object to the specified file in JSON format, creating the file in none exists.
